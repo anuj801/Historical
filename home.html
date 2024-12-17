@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attractive Navbar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="home.css">
+    <style>
+        
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        footer {
+            background-color: #1b1b1b;
+            padding: 40px 0;
+            color: white;
+            position: relative;
+        }
+
+        footer h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        footer .footer-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 0 50px;
+        }
+
+        footer .footer-section {
+            flex: 1;
+            margin: 20px 0;
+        }
+
+        footer .footer-section h2 {
+            font-size: 18px;
+            color: #f1c40f;
+            position: relative;
+        }
+
+        footer .footer-section p, .footer-section a {
+            color: #f0f0f0;
+            margin-bottom: 10px;
+            display: block;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer .footer-section a:hover {
+            color: #f1c40f;
+        }
+
+        /* Social icons styling */
+        .footer-section .socials a {
+            margin-right: 15px;
+            font-size: 24px;
+            color: #fff;
+            transition: transform 0.3s;
+        }
+
+        .footer-section .socials a:hover {
+            transform: scale(1.2);
+            color: #f1c40f;
+        }
+
+        /* Footer copyright */
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            font-size: 14px;
+            color: #f0f0f0;
+            border-top: 1px solid #444;
+        }
+
+        /* Responsive footer layout */
+       @media (max-width: 768px) {
+            footer .footer-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            footer .footer-section {
+                margin: 10px 0;
+            }
+        }
+
+        /* Animation effect */
+         .footer-section {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeUp 2s forwards;
+        }
+
+        @keyframes fadeUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }  
+       
+    </style>
+</head>
+<body>
+    <!-- Navbar Start -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">Heritage<span>India</span></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="home.html"  style="padding-right: 50px;">Home</a></li>
+                <li><a href="about.html" style="padding-right: 50px;">About</a></li>
+                <li><a href="famousplaces.html"style="padding-right: 50px;"> Famous  Places</a></li>
+                <li><a href="contact.html"style="padding-right: 50px;">Contact us</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+    <!-- Navbar End -->
+    <div class="container">
+        <h1 class="glow-text"   style="padding-top: 230px;"  >Heritage of India</h1>
+        <p class="subtext">A Journey Through Time</p>
+    </div>
+    <script src="home.js"></script> <br>  <br><br><br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br>
+   
+
+    <footer>
+        <div class="footer-container">
+            <!-- About Section -->
+            <div class="footer-section" style="animation-delay: 0.2s;">
+                <h2>About Us</h2>
+                <p>We are dedicated to showcasing India's rich cultural and historical heritage. Our mission is to bring knowledge and history to the world.</p>
+            </div>
+            <!-- Quick Links -->
+            <div class="footer-section" style="animation-delay: 0.4s;   padding-left:100px"  >
+                <h2>Quick Links</h2>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Heritage Sites</a>
+            </div>
+            <!-- Social Media -->
+            <div class="footer-section socials" style="animation-delay: 0.6s;">
+                <h2>Follow Us</h2>
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+            </div>
+        </div>
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            &copy; 2024 Anuj Sharma | All rights reserved
+        </div>
+    </footer>
+    
+
+
+
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+
+
+</body>
+</html>
